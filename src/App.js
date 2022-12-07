@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Redirect, Route, Switch } from "react-router-dom";
+import { GlobalStyle } from "./GlobalStyle";
 
-function App() {
+import Navigation from "./components/Shared/Navigation/Navigation";
+import Footer from "./components/Shared/Footer/Footer";
+import IndexPage from "./pages/IndexPage/IndexPage";
+import ProjectPage from "./pages/ProjectPage/ProjectPage";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <Navigation />
+      <Switch>
+        <Route path="/" exact component={IndexPage} />
+        <Route path="/projects" component={ProjectPage} />
+        <Redirect from="*" to="/" />
+      </Switch>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
