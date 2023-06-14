@@ -52,7 +52,7 @@ const ProjectDetail = ({ index, ...props }) => {
                 <div className="card-image">
                   <figure className="image">
                     <img
-                      src={PROJECTS[q].IMG_SRC}
+                      src={"/resume" + PROJECTS[q].IMG_SRC}
                       alt={PROJECTS[q].IMG_ALT}
                       style={{ borderRadius: "6px" }}
                     />

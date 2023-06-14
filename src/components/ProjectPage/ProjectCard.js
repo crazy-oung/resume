@@ -25,7 +25,7 @@ const ProjectCard = ({ index, ...props }) => {
             <ImgSection className="card-image">
               <figure className="image">
                 <ProjectThumbnail
-                  src={props.project.IMG_SRC}
+                  src={"resume" + props.project.IMG_SRC}
                   alt={props.project.IMG_ALT}
                   style={{ borderRadius: "6px" }}
                 />
