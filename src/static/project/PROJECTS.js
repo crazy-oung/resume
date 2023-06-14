@@ -39,8 +39,7 @@ export const PROJECTS = [
     },
     DEMO_URL: "http://www.hangang.in",
     GITHUB_URL: "https://github.com/BCSDLab/HANGANG_FRONT_END",
-    IMG_SRC:
-      "https://raw.githubusercontent.com/BCSDLab/HANGANG_FRONT_END/develop/.github/images/hangang-banner.png",
+    IMG_SRC: "/assets/image/project/hangang-banner.png",
     IMG_ALT: "한강 이미지",
   },
   {
